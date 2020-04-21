@@ -1,0 +1,13 @@
+{{ form_open({'url':"/user/#{user.id}/subscriptions/"}) }}
+        {{ form_submit() }}
+<div style="display:flex; flex-direction: column; max-height: 500px; overflow-x:hidden; overflow-y:scroll;">
+    {% for channel in channels %}
+        <label style="display: block; padding: 10px; ">
+            {{ form_checkbox('channels[]', channel.id, is_active_channel(subscription,channel.id)) }}
+            {{ channel.code }}
+        </label>
+    {% endfor %}
+</div>
+{{ form_hidden("subscriptionId", subscription.id) }}
+{{ form_submit() }}
+{{ form_close() }}

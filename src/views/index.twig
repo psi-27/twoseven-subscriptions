@@ -1,0 +1,7 @@
+Подписки
+{% include "subscriptions::flash" %}
+<ul>
+{% for user in users %}
+        <li><a href="/user/{{ user.id }}/subscriptions/">{{ user.name }}</a></li>
+{% endfor %}
+</ul>

@@ -1,0 +1,14 @@
+<div>
+    <a href="/subscriptions/">Список пользователей</a>
+</div>
+Подписки <b>{{ user.name }}</b>
+{% include "subscriptions::flash" %}
+{% for subscription in subscriptions %}
+    {% include("subscriptions::list") %}
+{% else %}
+    {% set subscription = {'id':0} %}
+    {% include("subscriptions::list") %}
+{% endfor %}
+
+
+{{ session_get('success') }}
