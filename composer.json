@@ -1,0 +1,17 @@
+{
+    "name"             : "twoseven/subscriptions",
+    "description"      : "description",
+    "minimum-stability": "stable",
+    "license"          : "proprietary",
+    "authors"          : [
+        {
+            "name" : "tsybinam",
+            "email": "psi-27@mail.ru"
+        }
+    ],
+    "autoload"         : {
+        "psr-4": {
+            "TwoSeven\\": "src/"
+        }
+    }
+}
