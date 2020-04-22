@@ -47,7 +47,8 @@
 Если нужно заполнить таблицу каналов - выполнить :
 >       $ php artisan db:seed --class=ChannelsSeeder
 >
->#### Маршруты
+
+#### Маршруты
 >       GET     /subscriptions/             - список пользователей
 >       GET     /user/{id}/subscriptions/   - список подписок для пользователя
 >       POST    /user/{id}/subscriptions/   - сохранение пакета подписки для пользователя.
