@@ -27,6 +27,11 @@
 >       // ...
 >       ]
 
+Опубликовать пакет и зависимости и выполнить миграцию БД: 
+>       $ php artisan vendor:publish
+>       $ composer dump-autoload
+>       $ php artisan migrate
+
 Раскомментировать расширения TwigBridge :
 >       'enabled' => [
 >       // ...
@@ -34,11 +39,6 @@
 >       'TwigBridge\Extension\Laravel\Html',
 >       // ...
 >       ]
-
-Опубликовать пакет и зависимости и выполнить миграцию БД: 
->       $ php artisan vendor:publish
->       $ composer dump-autoload
->       $ php artisan migrate
 
 #### Заполнение таблиц
 Для заполнения тестовыми данными таблицы пользователей выполнить следующие команды :
