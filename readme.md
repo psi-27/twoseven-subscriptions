@@ -2,8 +2,8 @@
 Подключить репозиторий в файле composer.json проекта
 >     "repositories": [
 >         {
->             "type": "git",
->             "url" : "packages/twoseven/subscriptions"
+>             "type": "vcs",
+>             "url" : "git@github.com:psi-27/twoseven-subscriptions.git"
 >         }
 >     ],
 
