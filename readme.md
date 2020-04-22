@@ -27,6 +27,14 @@
 >       // ...
 >       ]
 
+Раскомментировать расширения TwigBridge :
+>       'enabled' => [
+>       // ...
+>       'TwigBridge\Extension\Laravel\Form',
+>       'TwigBridge\Extension\Laravel\Html',
+>       // ...
+>       ]
+
 Опубликовать пакет и зависимости и выполнить миграцию БД: 
 >       $ php artisan vendor:publish
 >       $ composer dump-autoload
